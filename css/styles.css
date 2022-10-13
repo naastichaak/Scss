@@ -1,0 +1,195 @@
+.header-box {
+  margin: 0 auto;
+  max-width: 935px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-box .logo-link {
+  text-decoration: none;
+  color: #FED136;
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.14;
+}
+.header-box .menu .menu-list {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-box .menu .menu-list .menu-list-item {
+  list-style: none;
+}
+.header-box .menu .menu-list .menu-list-item .item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FED136;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.93;
+}
+
+.services {
+  margin: 0 auto;
+  max-width: 935px;
+  margin-top: 110px;
+}
+.services .main-title-1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.88;
+}
+.services .list-of-services {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.services .list-of-services .list-item {
+  list-style: none;
+  max-height: 185px;
+  max-width: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .list-of-services .list-item .icon {
+  width: 66px;
+  height: 66px;
+}
+.services .list-of-services .list-item .li-title {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 4.12;
+}
+.services .list-of-services .list-item .information {
+  text-align: center;
+  color: #777777;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.14;
+}
+
+.feedback {
+  padding-bottom: 115px;
+  padding-top: 92px;
+  background-color: #222222;
+}
+.feedback .feedback-wrapper {
+  margin: 0 auto;
+  max-width: 942px;
+}
+.feedback .feedback-wrapper .main-title-2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 115px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.23;
+}
+.feedback .feedback-wrapper form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+.feedback .feedback-wrapper form .name, .feedback .feedback-wrapper form .email, .feedback .feedback-wrapper form .subject {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+  height: 50px;
+  margin-bottom: 28px;
+  margin-right: 28px;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #CCCCCC;
+}
+.feedback .feedback-wrapper form .subject {
+  margin-bottom: 0px;
+}
+.feedback .feedback-wrapper form input::-moz-placeholder {
+  text-transform: uppercase;
+  color: #BBBBBB;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+.feedback .feedback-wrapper form input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #BBBBBB;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+.feedback .feedback-wrapper form input::placeholder {
+  text-transform: uppercase;
+  color: #BBBBBB;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+.feedback .feedback-wrapper .message {
+  width: 458px;
+  height: 210px;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: #CCCCCC;
+  resize: none;
+}
+.feedback .feedback-wrapper .message::-moz-placeholder {
+  text-transform: uppercase;
+  color: #BBBBBB;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+.feedback .feedback-wrapper .message:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #BBBBBB;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+.feedback .feedback-wrapper .message::placeholder {
+  text-transform: uppercase;
+  color: #BBBBBB;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+.feedback .feedback-wrapper .submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 242px;
+  height: 68px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  background-color: #FED136;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.22;
+}/*# sourceMappingURL=styles.css.map */

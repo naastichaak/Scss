@@ -1,0 +1,182 @@
+$bilbo: 'Bilbo Swash Caps', cursive;
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto Slab', serif;
+
+$title-color: #222222;
+$text-color: #777777;
+$addition-text-color: #BBBBBB;
+$yellow-color: #FED136;
+$white-color: #fff;
+$border-color:#CCCCCC;
+
+@mixin fonts($color, $family, $size, $weight, $line) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-box{
+    margin: 0 auto;
+    max-width: 935px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        .logo-link{
+            text-decoration: none;
+            @include fonts($yellow-color, $bilbo, 36px, 400, 1.14)
+        }
+
+        .menu{
+            .menu-list{
+                width: 480px;
+                display: flex;
+                justify-content: space-between;
+
+                .menu-list-item{
+                    list-style: none;
+                    
+                    .item-link{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        @include fonts ($yellow-color, $montserrat, 14px, 400, 2.93)
+                    }
+                }
+            }
+        }
+ }
+
+.services{
+    margin: 0 auto;
+    max-width: 935px;
+    margin-top: 110px;
+
+        .services-wrapper{
+            margin: 0 auto;
+            max-width: 942px;
+
+        .main-title-1{
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            @include fonts($title-color, $montserrat, 40px, 700, 1.88)
+        }
+
+        .list-of-services{
+            margin-top: 90px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 120px;
+
+                .list-item{
+                    list-style: none;
+                    max-height: 185px;
+                    max-width: 274px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                        .icon{
+                            width: 66px;
+                            height: 66px;
+                        }
+
+                        .li-title{
+                            @include fonts($title-color, $montserrat, 18px, 700, 4.12)
+                        }
+
+                        .information{
+                            text-align: center;
+                            @include fonts($text-color, $roboto, 14px, 300, 1.14) 
+                        }
+                }  
+       }
+       }
+}
+
+.feedback{
+    padding-bottom: 115px;
+    padding-top: 92px;
+    background-color: $title-color;
+
+        .feedback-wrapper{
+            margin: 0 auto;
+            max-width: 942px;
+
+                .main-title-2{
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                    margin-bottom: 115px;
+                    @include fonts ($white-color, $montserrat, 40px, 700, 1.23)
+                }
+
+                form{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 27px;
+
+                        .name, .email, .subject{
+                            display: flex;
+                            flex-direction: column;
+                            width: 455px;
+                            height: 50px;
+                            margin-bottom: 28px;
+                            margin-right: 28px;
+                            border-width: 1px;
+                            border-radius: 3px;
+                            border-color: $border-color;
+                            padding-left: 20px;
+                            @include fonts ($text-color, $montserrat, 20px, 400)
+                        }
+
+                        .subject{
+                            margin-bottom: 0px;
+                        }
+
+                        input::placeholder{
+                            text-transform: uppercase;
+                            @include fonts ($addition-text-color, $montserrat, 14px, 700, 1.21)
+                        }
+                }
+
+            .message{
+                width: 458px;
+                height: 210px;
+                border-width: 1px;
+                border-radius: 3px;
+                border-color: $border-color;
+                resize: none;
+                padding-top: 16px;
+                padding-left: 20px;
+                @include fonts ($text-color, $montserrat, 18px, 400)
+            }
+
+            .message::placeholder{
+                text-transform: uppercase;
+                @include fonts ($addition-text-color, $montserrat, 14px, 700, 1.21)
+            }
+
+            .submit{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 242px;
+                height: 68px;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+                background-color: $yellow-color;
+                text-transform: uppercase;
+                @include fonts ($white-color, $montserrat, 18px, 700,1.22)
+            }
+        }
+}
